@@ -32,7 +32,7 @@ class Program
             {
                 case 1:
                 { 
-                     Console.WriteLine("Enter the amunt to deposit");
+                     Console.WriteLine("Enter the amount to deposit");
                      string amtstring = Console.ReadLine();
                       int amt = Int16.Parse(amtstring);
                     curr.deposit(amt);
@@ -41,10 +41,11 @@ class Program
 
                 case 2:
                 { 
-                     Console.WriteLine("Enter the amunt to withdraw");
+                     Console.WriteLine("Enter the amount to withdraw");
                      string amtstring = Console.ReadLine();
                       int amt = Int16.Parse(amtstring);
                     curr.withdrawal(amt);
+                     Console.WriteLine("the balance is " + curr.getbalance());
                     break;
                 }
 
@@ -73,7 +74,7 @@ class Program
             {
                 case 1:
                 { 
-                     Console.WriteLine("Enter the amunt to deposit");
+                     Console.WriteLine("Enter the amount to deposit");
                      string amtstring = Console.ReadLine();
                       int amt = Int16.Parse(amtstring);
                     rec.deposit(amt);
@@ -82,10 +83,11 @@ class Program
 
                 case 2:
                 { 
-                     Console.WriteLine("Enter the amunt to withdraw");
+                     Console.WriteLine("Enter the amount to withdraw");
                      string amtstring = Console.ReadLine();
                       int amt = Int16.Parse(amtstring);
                     rec.withdrawal(amt);
+                    Console.WriteLine("the balance is " + rec.getbalance());
                     break;
                 }
 
@@ -112,7 +114,7 @@ case 3:
             {
                 case 1:
                 { 
-                     Console.WriteLine("Enter the amunt to deposit");
+                     Console.WriteLine("Enter the amount to deposit");
                      string amtstring = Console.ReadLine();
                       int amt = Int16.Parse(amtstring);
                     sav.deposit(amt);
@@ -121,10 +123,11 @@ case 3:
 
                 case 2:
                 { 
-                     Console.WriteLine("Enter the amunt to withdraw");
+                     Console.WriteLine("Enter the amount to withdraw");
                      string amtstring = Console.ReadLine();
                       int amt = Int16.Parse(amtstring);
                     sav.withdrawal(amt);
+                    Console.WriteLine("the balance is " + sav.getbalance());
                     break;
                 }
 

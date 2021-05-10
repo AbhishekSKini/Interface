@@ -1,15 +1,18 @@
 
+using System;
+
 namespace  current{
    
    public class currentAccount : IActions
 {
 
     
-      public  static long balance=0;
+      public static long balance=100;
   public void deposit(long newamount) 
   {
 
    balance+=newamount;
+   Console.WriteLine(newamount +"deposited successfully");
    
   }
 
@@ -17,6 +20,7 @@ namespace  current{
   {
     
    balance-=newamount;
+   Console.WriteLine(newamount +"withdrawn successfully");
   }
 
   public long getbalance()
